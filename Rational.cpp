@@ -62,7 +62,7 @@ void Rational::MakeIrreducible()
 			bool IsDeleted = false;
 			while (j != simpleDevidersUP.size())
 			{
-				if (simpleDevidersUP[i] == simpleDevidersDOWN[j])
+				if (simpleDevidersUP[j] == simpleDevidersDOWN[i])
 				{
 					IsDeleted = true;
 					simpleDevidersUP.erase(simpleDevidersUP.begin() + j);

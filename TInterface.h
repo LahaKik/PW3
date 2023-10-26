@@ -44,7 +44,7 @@ public:
         TransposeBut->setGeometry((40 * size) * Scale, 40 * Scale, 50 * Scale, 30 * Scale);        
 
         DeterminantLabel = new QLabel("Determinant:", this);
-        DeterminantLabel->setGeometry(15 * Scale, (40 * size + 20) * Scale, 60 * Scale, 20 * Scale);
+        DeterminantLabel->setGeometry(15 * Scale, (40 * size + 20) * Scale, 70 * Scale, 20 * Scale);
 
         RankLabel = new QLabel("Rank:", this);
         RankLabel->setGeometry(15 * Scale, (40 * size) * Scale, 30 * Scale, 20 * Scale);

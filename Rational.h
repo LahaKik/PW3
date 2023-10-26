@@ -155,10 +155,20 @@ public:
 
 	Rational Invert()
 	{
-		Uint temp = upNum;
-		upNum = downNum;
-		downNum = temp;
-		return *this;
+		if(upNum >= 0)
+		{
+			Uint temp = upNum;
+			upNum = downNum;
+			downNum = temp;
+			return *this;
+		}
+		else
+		{
+			Uint temp = -upNum;
+			upNum = -downNum;
+			downNum = temp;
+			return *this;
+		}
 	}
 	
 	double decimal() { return (double)upNum / downNum; }

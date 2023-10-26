@@ -46,7 +46,7 @@ number Matrix::Determinant()
 	temp.copyMatrix(this);
 
 	applyGaussMethod();
-
+	Print();
 	number com = 1;
 	for (Uint i = 0; i < size; i++)
 	{
